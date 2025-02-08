@@ -1,0 +1,17 @@
+<nav>
+    <a routerLink="/"><img src="logo.png" alt="Logo"></a>
+    <!-- Search  Form -->
+    <form (submit)="handleSearchSubmit()">
+        <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue"> <!--two-way binding-->
+        <button type="submit">Search</button>
+    </form>
+    <div>
+        <a routerLink="/">Home</a>  <!--public-->
+        <a routerLink="/categories">Category</a> <!--public-->
+        <a *ngIf="isAuthenticated" routerLink="/profile">Account</a> <!--user-->
+        <a *ngIf="isAdmin" routerLink="/admin">Admin</a> <!--admin-->
+        <a *ngIf="!isAuthenticated" routerLink="/login">Login</a> <!--public-->
+        <a *ngIf="isAuthenticated" (click)="handleLogout()">Logout</a> <!--user-->
+        <a routerLink="/cart">Cart</a> <!--public-->
+    </div>
+</nav>

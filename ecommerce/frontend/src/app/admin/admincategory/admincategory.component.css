@@ -1,0 +1,43 @@
+*{
+    font-size: 20px;
+}
+.admin{
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 8rem;
+    margin-top: 60px;
+}
+h2{
+    font-size: 50px;
+    margin: 20px;
+    text-align: left;
+}
+button{
+    padding: 10px 15px;
+    background-color: #4f8fe3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.delete{
+    background-color: rgb(150, 162, 162);
+}
+button:hover{
+    opacity: 0.8;
+}
